@@ -1,4 +1,3 @@
-# my-site
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -57,7 +56,6 @@ function love() {
 
 const noBtn = document.getElementById("no");
 
-// mouse কাছে গেলেই পালাবে 😈
 document.addEventListener("mousemove", (e) => {
   const rect = noBtn.getBoundingClientRect();
 
@@ -71,7 +69,6 @@ document.addEventListener("mousemove", (e) => {
   }
 });
 
-// No click করলে YES বড় হবে 😈
 noBtn.addEventListener("click", () => {
   size += 10;
   const yesBtn = document.getElementById("yes");
@@ -79,7 +76,6 @@ noBtn.addEventListener("click", () => {
   yesBtn.style.padding = (size/2) + "px " + (size) + "px";
 });
 
-// Button move
 function moveButton() {
   const x = Math.random() * (window.innerWidth - 100);
   const y = Math.random() * (window.innerHeight - 50);
